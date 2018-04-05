@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>minimalist bacteria js</title>
+  <meta charset="utf-8" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="js/config.js"></script>
+  <script src="js/board.js"></script>
+  <script src="js/gui.js"></script>
+  <script src="js/match.js"></script>
+</head>
+
+<body>
+  <form id="game" name="game" onsubmit="return false;">
+    <table id="board" name="board">
+      <tr>
+        <th class="file">8</th>
+        <td><button class="square square-empty" onclick="on_click_sq(0);" name="sq0"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(1);" name="sq1"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(2);" name="sq2"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(3);" name="sq3"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(4);" name="sq4"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(5);" name="sq5"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(6);" name="sq6"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(7);" name="sq7"></button></td>
+      </tr>
+      <tr>
+        <th class="file">7</th>
+        <td><button class="square square-empty" onclick="on_click_sq(8);" name="sq8"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(9);" name="sq9"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(10);" name="sq10"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(11);" name="sq11"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(12);" name="sq12"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(13);" name="sq13"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(14);" name="sq14"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(15);" name="sq15"></button></td>
+      </tr>
+      <tr>
+        <th class="file">6</th>
+        <td><button class="square square-empty" onclick="on_click_sq(16);" name="sq16"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(17);" name="sq17"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(18);" name="sq18"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(19);" name="sq19"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(20);" name="sq20"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(21);" name="sq21"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(22);" name="sq22"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(23);" name="sq23"></button></td>
+      </tr>
+      <tr>
+        <th class="file">5</th>
+        <td><button class="square square-empty" onclick="on_click_sq(24);" name="sq24"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(25);" name="sq25"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(26);" name="sq26"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(27);" name="sq27"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(28);" name="sq28"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(29);" name="sq29"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(30);" name="sq30"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(31);" name="sq31"></button></td>
+      </tr>
+      <tr>
+        <th class="file">4</th>
+        <td><button class="square square-empty" onclick="on_click_sq(32);" name="sq32"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(33);" name="sq33"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(34);" name="sq34"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(35);" name="sq35"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(36);" name="sq36"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(37);" name="sq37"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(38);" name="sq38"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(39);" name="sq39"></button></td>
+      </tr>
+      <tr>
+        <th class="file">3</th>
+        <td><button class="square square-empty" onclick="on_click_sq(40);" name="sq40"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(41);" name="sq41"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(42);" name="sq42"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(43);" name="sq43"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(44);" name="sq44"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(45);" name="sq45"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(46);" name="sq46"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(47);" name="sq47"></button></td>
+      </tr>
+      <tr>
+        <th class="file">2</th>
+        <td><button class="square square-empty" onclick="on_click_sq(48);" name="sq48"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(49);" name="sq49"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(50);" name="sq50"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(51);" name="sq51"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(52);" name="sq52"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(53);" name="sq53"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(54);" name="sq54"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(55);" name="sq55"></button></td>
+      </tr>
+      <tr>
+        <th class="file">1</th>
+        <td><button class="square square-empty" onclick="on_click_sq(56);" name="sq56"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(57);" name="sq57"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(58);" name="sq58"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(59);" name="sq59"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(60);" name="sq60"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(61);" name="sq61"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(62);" name="sq62"></button></td>
+        <td><button class="square square-empty" onclick="on_click_sq(63);" name="sq63"></button></td>
+      </tr>
+      <tr>
+        <th></th>
+        <th class="rank">A</th>
+        <th class="rank">B</th>
+        <th class="rank">C</th>
+        <th class="rank">D</th>
+        <th class="rank">E</th>
+        <th class="rank">F</th>
+        <th class="rank">G</th>
+        <th class="rank">H</th>
+      </tr>
+      <tr>
+        <td></td>
+        <th><button class="score" name="score_green"></button></th>
+        <th><button class="score" name="score_red"></button></th>
+        <td colspan="2"><button class="time" name="time"></button></td>
+        <td colspan="2"><button class="match match-repeat" autofocus="true" onclick="match(true)">re-match !</button></td>
+        <td colspan="2"><button class="match match-new" autofocus="true" onclick="match()">match !</button></td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>

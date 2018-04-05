@@ -1,0 +1,139 @@
+/* depth1[at]protonmail[dot]com */
+html, 
+body
+{
+    background-color: #34C0C9;
+}
+
+table
+{
+    margin: 0 auto;
+}
+
+button:hover
+{
+    border: 3px solid yellow;
+}
+
+.square
+{
+    width: 48px;
+    height: 48px;
+    border-radius: 25px;
+    border: 3px solid #FFF5E6;
+}
+
+.time
+{
+    border: none;
+    width: 96px;
+    height: 48px;
+    border-radius: 5px;
+    color: #052229;
+    background-color: #FFF5E6;
+    border: 3px solid #FFF5E6;
+}
+
+.time-green
+{
+    border: 3px solid #33dd55;
+}
+
+.time-red
+{
+    border: 3px solid #f44242;
+}
+
+.score
+{
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    border: 3px solid #FFF5E6;
+    background-color: #FFF5E6;
+}
+
+.square-empty
+{
+    background-color: #FFF5E6;
+}
+
+.square-full
+{
+    background-color: #052229;
+}
+
+.square-red,
+.score-red
+{
+    color: #35020b;
+    background-color: #f44242;
+}
+
+.square-green,
+.score-green
+{
+    color: #033f10;
+    background-color: #33dd55;
+}
+
+.square-red-shifting
+{
+    background-color: #f4bec6;
+    border: 6px solid #FFF5E6;
+}
+
+.square-red-duplication
+{
+    background-color: #ffdde3;
+    border: 6px solid #FFF5E6;
+}
+
+.square-green-shifting
+{
+    background-color: #9bdba8;
+    border: 6px solid #FFF5E6;
+}
+
+.square-green-duplication
+{
+    background-color: #cbedd2;
+    border: 6px solid #FFF5E6;
+}
+
+.match
+{
+    width: 96px;
+    height: 48px;
+    border-radius: 5px;
+    border: 3px solid #FFF5E6;
+    background-color: #052229;
+}
+
+.file,
+.rank,
+.match
+{
+    color: #FFF5E6;
+    font-family: sans-serif;
+}
+
+.file
+{
+    padding-right: 15px;
+}
+
+.rank
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.match-new
+{
+}
+
+.match-repeat
+{
+}
